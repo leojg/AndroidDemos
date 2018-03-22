@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Popular Shows</string>
+
+    <string name="average_votes_label">Average Votes</string>
+    <string name="average_votes_label_short">Votes</string>
+    <string name="similar_shows_title">Related Shows</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    cardview:cardUseCompatPadding="true"
+    cardview:cardCornerRadius="2dp"
+    cardview:contentPadding="5dp"
+    cardview:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitStart"
+            android:id="@+id/tv_show_thumbnail"/>
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_alignParentRight="true"
+            style="@style/TVShowItem.Title"
+            android:text="TitlePlaceHolder"
+            android:id="@+id/tv_show_title"/>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            style="@style/TVShowItem.Votes"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/average_votes_label"
+                android:id="@+id/tv_show_votes_label"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="X.X"
+                android:id="@+id/tv_show_votes"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

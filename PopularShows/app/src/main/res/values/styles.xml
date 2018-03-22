@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="AppTheme.NoTitle">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TVShowItem">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    
+    <style name="TVShowItem.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="TVShowItem.Votes">
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+    </style>
+
+    <style name="SimilarTVShowItem">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SimilarTVShowItem.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="SimilarTVShowItem.Votes">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="TVShowDetail">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="TVShowOverview">
+        <item name="android:textSize">22sp</item>
+        <item name="android:lineSpacingExtra">1dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="SimilarTVShowsTitle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+
+    <style name="SimilarTVShowsList">
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+</resources>
