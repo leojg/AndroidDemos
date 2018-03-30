@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KtPopularShows</string>
+
+    <string name="average_votes_label">Average Votes</string>
+    <string name="average_votes_label_short">Votes</string>
+    <string name="similar_shows_title">Related Shows</string>
+
+    <string name="show_title_placeholder">Show Title</string>
+    <string name="show_votes_placeholder">X.X</string>
+</resources>
