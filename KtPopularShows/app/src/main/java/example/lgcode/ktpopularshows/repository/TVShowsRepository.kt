@@ -1,16 +1,15 @@
 package example.lgcode.ktpopularshows.repository
 
 import example.lgcode.ktpopularshows.domain.TVShow
-import example.lgcode.ktpopularshows.network.ServiceUtil
+import example.lgcode.ktpopularshows.network.TVShowService
 import io.reactivex.Observable
 import io.reactivex.ObservableOnSubscribe
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.observers.DisposableObserver
 import io.reactivex.schedulers.Schedulers
+import javax.inject.Inject
 
-class TVShowsRepository {
-
-    private val tvShowService = ServiceUtil.tvShowsService
+class TVShowsRepository @Inject constructor(private val tvShowService: TVShowService) {
 
     fun getTVShowsList(page: Int, observer: DisposableObserver<List<TVShow>>) {
         Observable.create(ObservableOnSubscribe<List<TVShow>> { emitter ->

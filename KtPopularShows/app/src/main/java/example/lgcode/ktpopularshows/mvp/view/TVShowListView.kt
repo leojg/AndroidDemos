@@ -13,7 +13,7 @@ class TVShowListView(
         val activity: AppCompatActivity
 ): ActivityView(WeakReference(activity)) {
 
-    init {
+    fun setUp() {
         activity.shows_list.layoutManager = LinearLayoutManager(activity)
     }
 
@@ -22,7 +22,7 @@ class TVShowListView(
     }
 
     fun setShowListScrollListener(scrollListener: RecyclerView.OnScrollListener) {
-        activity.shows_list.addOnScrollListener(scrollListener);
+        activity.shows_list.addOnScrollListener(scrollListener)
     }
 
     fun setAdapter(adapter: TVShowsAdapter) {

@@ -9,19 +9,22 @@ import example.lgcode.ktpopularshows.domain.TVShowDetailEvent
 import example.lgcode.ktpopularshows.mvp.model.TVShowDetailModel
 import example.lgcode.ktpopularshows.mvp.view.TVShowDetailView
 import io.reactivex.observers.DisposableObserver
+import javax.inject.Inject
 
-class TVShowDetailPresenter(
-        private val model: TVShowDetailModel,
-        private val view: TVShowDetailView
-) {
+class TVShowDetailPresenter {
+
+    @Inject
+    lateinit var model: TVShowDetailModel
+
+    @Inject
+    lateinit var view: TVShowDetailView
+
     private var isLoading = false
     private var isLastPage = false
     private var pageSize = 0
     private var page = 1
 
     fun init(context: Context) {
-
-        view.showLoader()
 
         view.updateTVShow(
                 model.tvShow.title,

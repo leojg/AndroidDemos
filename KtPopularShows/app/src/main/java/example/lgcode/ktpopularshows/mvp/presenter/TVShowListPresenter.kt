@@ -23,8 +23,9 @@ class TVShowListPresenter(
     private var pageSize = 0
     private var page = 1
 
-    fun init(context: Context) {
+    fun setUp(context: Context) {
 
+        view.setUp()
         view.showLoader()
         fetchTVShows()
 

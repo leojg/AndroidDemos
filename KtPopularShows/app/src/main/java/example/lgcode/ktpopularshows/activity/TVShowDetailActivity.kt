@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import example.lgcode.ktpopularshows.R
 import example.lgcode.ktpopularshows.domain.TVShow
-import example.lgcode.ktpopularshows.mvp.model.TVShowDetailModel
 import example.lgcode.ktpopularshows.mvp.presenter.TVShowDetailPresenter
-import example.lgcode.ktpopularshows.mvp.view.TVShowDetailView
-import example.lgcode.ktpopularshows.repository.TVShowsRepository
 
 class TVShowDetailActivity: AppCompatActivity() {
 
@@ -31,7 +28,7 @@ class TVShowDetailActivity: AppCompatActivity() {
         setContentView(R.layout.activity_detail_view)
 
         val tvShow = intent.extras[KEY_TV_SHOW] as TVShow
-        presenter = TVShowDetailPresenter(TVShowDetailModel(tvShow, TVShowsRepository()), TVShowDetailView(this))
+        presenter = TVShowDetailPresenter()
         presenter.init(this)
     }
 
